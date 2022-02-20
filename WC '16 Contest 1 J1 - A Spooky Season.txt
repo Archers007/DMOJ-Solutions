@@ -1,29 +1,19 @@
 //Includes-------------------------------------------
 #include <iostream>     //for using cout
-#include <cmath>//for math
-#include <algorithm>
-#include <string>
-#include <stdio.h>
+#include <cmath>        //for math
 
 using namespace std;
 //Includes-------------------------------------------
  
 //var------------------------------------------------
-int w1,w2,w3;
-
+int Spooks;
 //var------------------------------------------------
 int main(){
-	cin >>w1;
-	if(w1%3!=0){
-		w1=w1+2;
+	cin >> Spooks;
+	cout<<"sp";
+	while(Spooks!=0){
+		cout << "o";
+		Spooks--;
 	}
-	cin >>w2;
-	if(w2%3!=0){
-		w2=w2+2;
-	}
-	cin >>w3;
-	if(w3%3!=0){
-		w3=w3+2;
-	}
-	cout <<(w1/3)+(w2/3)+(w3/3);
+	cout<<"ky";
 }

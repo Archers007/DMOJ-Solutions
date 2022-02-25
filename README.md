@@ -1,5 +1,5 @@
 # What?
-### Yeah I Made A Repo With All My Answeres To [DMOJ](https://dmoj.ca/) Questions I Have Completed In C++!
+### A Git Repo With All My Answeres To [DMOJ](https://dmoj.ca/) Questions I Have Completed In C++!
 
 #### A couple of things:
 

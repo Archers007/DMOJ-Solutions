@@ -11,27 +11,27 @@
 
 
 ## Curently Working On:<br>
-#### [Mock CCC '19 Contest 2 J3 - Tudor Buys Some Tea](https://dmoj.ca/problem/nccc7j3)
+#### [GFSSOC '14 Winter J1 - Flying Plushies](https://dmoj.ca/problem/gfssoc1j1)
 
 ### To Do:
+-----------
 
-1. Flying plushies
-2. Not enough users
-3. Vasile and haircut
-4. Pink
-5. Ren Ashbell
-6. An early Christamas present
-7. Discerning discounts
-8. Itami and Manga
-9. Kosnja
-10. Longest tunnel
-11. Pumpkin patches
-12. War on two fronts
-13. 16 bit
-14. Timsko
-16. A simplex problem
-17. Mimi and video games
-18. Shoes
-19. Love triangle
-20. What is n daddy?
-21. Faktor
+1. Not enough users
+2. Vasile and haircut
+3. Pink
+3. Ren Ashbell
+4. An early Christamas present
+5. Discerning discounts
+6. Itami and Manga
+7. Kosnja
+8. Longest tunnel
+9. Pumpkin patches
+10. War on two fronts
+11. 16 bit
+12. Timsko
+13. A simplex problem
+14. Mimi and video games
+15. Shoes
+16. Love triangle
+17. What is n daddy?
+18. Faktor

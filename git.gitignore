@@ -1,8 +1,6 @@
 .replit
 Main.o
 Working_Test.o
-Working_file.cpp
-Working_file.o
 main
 main.o
 replit.nix

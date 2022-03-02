@@ -11,7 +11,7 @@
 
 
 ## Curently Working On:<br>
-#### [GFSSOC '14 Winter J1 - Flying Plushies](https://dmoj.ca/problem/gfssoc1j1)
+### [Mimi and video games](https://dmoj.ca/problem/dmopc18c2p0)
 
 ### To Do:
 -----------
@@ -30,8 +30,4 @@
 11. 16 bit
 12. Timsko
 13. A simplex problem
-14. Mimi and video games
-15. Shoes
-16. Love triangle
-17. What is n daddy?
-18. Faktor
+14. Mimi and video games (BEING WORKED ON!)

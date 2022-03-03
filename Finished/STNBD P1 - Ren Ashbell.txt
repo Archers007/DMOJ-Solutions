@@ -13,8 +13,20 @@ using namespace std;
 //Includes-------------------------------------------
 
 //var------------------------------------------------
-int w1,w2,w3,w4;
+int n,POWER, ren;
 //var------------------------------------------------
 int main(){
-	
+	cin>>n;
+	cin >> ren;
+	n--;
+	while(n!=0){
+		cin >> POWER;
+		if(ren<=POWER){
+			
+			cout<<"NO";
+			return 0;
+		}
+		n--;
+	}
+	cout<<"YES";
 }

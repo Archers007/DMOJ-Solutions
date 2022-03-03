@@ -13,8 +13,17 @@ using namespace std;
 //Includes-------------------------------------------
 
 //var------------------------------------------------
-int w1,w2,w3,w4;
+int C,M,Max;
 //var------------------------------------------------
 int main(){
-	
+cin >> C;
+cin >> M;
+cin >> Max;
+if (C > M) {
+  Max = C*Max;
+  cout <<Max<<endl;
+}else {
+  Max = M*Max;
+  cout <<Max<<endl;
+}
 }

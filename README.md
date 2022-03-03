@@ -11,11 +11,10 @@
 
 
 ## Curently Working On:<br>
-### [Mimi and video games](https://dmoj.ca/problem/dmopc18c2p0)
+### [Tudor learns DDR](https://dmoj.ca/problem/ddrp2)
 
 ### To Do:
------------
-
+---
 1. Not enough users
 2. Vasile and haircut
 3. Pink
@@ -29,5 +28,8 @@
 10. War on two fronts
 11. 16 bit
 12. Timsko
-13. A simplex problem
-14. Mimi and video games (BEING WORKED ON!)
+13. Bruno and trig
+14. Tudor learns DDR
+15. Rainbow rating
+16. Pusheen’s report card
+---

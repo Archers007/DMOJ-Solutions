@@ -13,8 +13,26 @@ using namespace std;
 //Includes-------------------------------------------
 
 //var------------------------------------------------
-int w1,w2,w3,w4;
+int a=5,b=5,c=2,d=2,B,P;
+char Y;
 //var------------------------------------------------
 int main(){
-	
+	cin>>B>>P>>Y;
+	if(Y=='Y'){
+		if(P*5<=B){
+			cout<<"B";
+		}else if(P*2<=B){
+			cout<<"D";
+		}else{
+			cout<<"NO PIZZA";
+		}
+	}else if(Y=='N'){
+		if(P*5<=B){
+			cout<<"A";
+		}else if(P*2<=B){
+			cout<<"C";
+		}else{
+			cout<<"NO PIZZA";
+		}
+	}
 }

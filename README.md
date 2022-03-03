@@ -11,7 +11,7 @@
 
 
 ## Curently Working On:<br>
-### [Tudor learns DDR](https://dmoj.ca/problem/ddrp2)
+### [Tudor learns DDR](https://dmoj.ca/problem/coci10c1p1)
 
 ### To Do:
 ---
@@ -29,7 +29,4 @@
 11. 16 bit
 12. Timsko
 13. Bruno and trig
-14. Tudor learns DDR
-15. Rainbow rating
-16. Pusheen’s report card
 ---

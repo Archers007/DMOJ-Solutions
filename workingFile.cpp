@@ -7,21 +7,15 @@
 #include <cstring>
 #include <stdio.h>
 #include <locale>
+#include <vector>
 
 
 using namespace std;
 //Includes-------------------------------------------
 
 //var------------------------------------------------
-int a,b;
 //var------------------------------------------------
 int main(){
-	cin>>a>>b;
-	if(a>b){
-		cout<<"CS452\n";
-	}else if(b>a){
-		cout<<"PHIL145\n";
-	}else if(a==b){
-		return 0;
-	}
+
+	
 }

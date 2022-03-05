@@ -7,32 +7,28 @@
 #include <cstring>
 #include <stdio.h>
 #include <locale>
+#include <vector>
 
 
 using namespace std;
 //Includes-------------------------------------------
 
 //var------------------------------------------------
-int B,P;
-char Y;
+int n,nu;
+vector<int> v;
 //var------------------------------------------------
 int main(){
-	cin>>B>>P>>Y;
-	if(Y=='Y'){
-		if(P*5<=B){
-			cout<<"B";
-		}else if(P*2<=B){
-			cout<<"D";
-		}else{
-			cout<<"NO PIZZA";
-		}
-	}else if(Y=='N'){
-		if(P*5<=B){
-			cout<<"A";
-		}else if(P*2<=B){
-			cout<<"C";
-		}else{
-			cout<<"NO PIZZA";
+	cin>>n;
+	while(n!=0){
+		n--;
+		v.push_back(nu);
+		cin>>nu;
+	}
+	sort(v.begin(), v.end());
+	for (auto x : v){
+		if(x!=0){
+    	cout << x << " ";
+			return 0;
 		}
 	}
 }

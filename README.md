@@ -19,14 +19,12 @@
 2. Vasile and haircut
 3. Pink
 3. Ren Ashbell
-4. An early Christamas present
-5. Discerning discounts
-6. Itami and Manga
-7. Kosnja
-8. Longest tunnel
-9. Pumpkin patches
-10. War on two fronts
-11. 16 bit
-12. Timsko
-13. Bruno and trig
+4. Discerning discounts
+5. Itami and Manga
+6. Kosnja
+7. Longest tunnel
+8. Pumpkin patches
+9. War on two fronts
+10. 16 bit
+11. Timsko
 ---

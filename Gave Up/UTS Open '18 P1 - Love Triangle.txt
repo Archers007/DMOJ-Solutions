@@ -6,17 +6,20 @@
 #include <cstring>
 #include <stdio.h>
 #include <locale>
+#include <vector>
 
 
 using namespace std;
 //Includes-------------------------------------------
 
 //var------------------------------------------------
-int w1,w2,w3,a,b,abso;
+long int w1,w2,w3,w4,a,b,first;
+vector<int> v;
 //var------------------------------------------------
 int main(){
 	cin>>a>>b;
-	abso=0;
+	w4=a*b;
+	
 	w1=a*b;
 	
 	w3=a+b;
@@ -32,16 +35,23 @@ int main(){
 		w2=0;
 	}
 	
-	if(w1>w3){
-		swap(w1, w3);
+	int n=to_string(w1).length();
+	while(n!=0){
+		v.push_back(w4%10);
+		w4=w4/10;
+		n--;
 	}
-	if(w1>w2){
-		swap(w1, w2);
+	n=to_string(w1).length();
+	int check=to_string(w1).length();
+	while(n!=0){
+		if(v[check-1]){
+			if((v[n-1])<0 and first>=1){
+				cout<<(v[n-1])*-1;
+			}else{
+				cout<<v[n-1];
+				first++;
+			}
+		}
+		n--;
 	}
-	if(w2>w3){
-		swap(w2, w3);
-	}
-
-	cout <<w3<<endl;
-	
 }

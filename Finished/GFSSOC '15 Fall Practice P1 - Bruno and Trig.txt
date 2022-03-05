@@ -13,26 +13,17 @@ using namespace std;
 //Includes-------------------------------------------
 
 //var------------------------------------------------
-int B,P;
-char Y;
+int a,b,c;
 //var------------------------------------------------
 int main(){
-	cin>>B>>P>>Y;
-	if(Y=='Y'){
-		if(P*5<=B){
-			cout<<"B";
-		}else if(P*2<=B){
-			cout<<"D";
-		}else{
-			cout<<"NO PIZZA";
-		}
-	}else if(Y=='N'){
-		if(P*5<=B){
-			cout<<"A";
-		}else if(P*2<=B){
-			cout<<"C";
-		}else{
-			cout<<"NO PIZZA";
-		}
-	}
+	cin >> a;
+	cin >> b;
+	cin >> c;
+
+  if(a + b > c && a + c > b && c + b > a) {
+    cout <<"Huh? A triangle?"<<endl;
+  }
+  else {
+    cout <<"Maybe I should go out to sea..."<<endl;
+  }
 }

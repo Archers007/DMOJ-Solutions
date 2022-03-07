@@ -10,8 +10,8 @@
 3) The folder called "Gave Up" are the ones i couldnt figure out at the time
 
 
-## Curently Working On:<br>
-### [Tudor learns DDR](https://dmoj.ca/problem/coci10c1p1)
+## Curently Working On: (EDIT: I STOPPED THE TODO LIST)<br>
+### [16 bit]([https://dmoj.ca/problem/coci10c1p1](https://dmoj.ca/problem/16bitswonly))
 
 ### To Do:
 ---
@@ -26,5 +26,4 @@
 8. Pumpkin patches
 9. War on two fronts
 10. 16 bit
-11. Timsko
 ---

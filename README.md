@@ -24,6 +24,5 @@
 6. Kosnja
 7. Longest tunnel
 8. Pumpkin patches
-9. War on two fronts
 10. 16 bit
 ---

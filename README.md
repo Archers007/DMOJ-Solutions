@@ -9,20 +9,5 @@
 
 3) The folder called "Gave Up" are the ones i couldnt figure out at the time
 
-
-## Curently Working On: (EDIT: I STOPPED THE TODO LIST)<br>
-### [16 bit]([https://dmoj.ca/problem/coci10c1p1](https://dmoj.ca/problem/16bitswonly))
-
-### To Do:
----
-1. Not enough users
-2. Vasile and haircut
-3. Pink
-3. Ren Ashbell
-4. Discerning discounts
-5. Itami and Manga
-6. Kosnja
-7. Longest tunnel
-8. Pumpkin patches
-10. 16 bit
----
+## Curently Working On: [CTSC '09 P1 - Moving Plates](https://dmoj.ca/problem/ctsc09p1)
+### My Code In CTSC '09 P1 - Moving Plates.txt Works For Cases 2&3 But Non Of The Others!

@@ -10,4 +10,4 @@
 3) The folder called "Gave Up" are the ones i couldnt figure out at the time
 
 ## Curently Working On: [CTSC '09 P1 - Moving Plates](https://dmoj.ca/problem/ctsc09p1)
-### My Code In CTSC '09 P1 - Moving Plates.txt Works For Cases 2&3 But Non Of The Others!
+#### My Code In CTSC '09 P1 - Moving Plates.txt Works For Cases 2&3 But Non Of The Others!

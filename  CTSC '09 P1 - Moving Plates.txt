@@ -18,6 +18,11 @@ vector<int> s1,s2,s3;
 void complete(){
 	cout<<"\n WORKED!🍻\n";
 }
+void BRUH(){
+	while(1!=0){
+		break;
+	}
+}
 
 void plateexe(){
 	while(1!=0){
@@ -98,16 +103,13 @@ int main(){
 				s1.pop_back();
 			}else{
 				if(plates!=0){
+					BRUH();
 					moves++;
 					s2.push_back(s1[plates]);
 					s1.pop_back();
 				}else{
 					if(s1[plates]==1){
-						s2.push_back(s1[plates]);
-						s1.pop_back();
-						platesb=(s2.size())-1;
-						s1.push_back(s2[platesb]);
-						s2.pop_back();
+						BRUH();
 					}
 				}
 			}
@@ -118,7 +120,7 @@ int main(){
 }
 	
 /*
-case1 failed
+case1 fail
 case2 pass (314)
 case3 pass (300)
 case4 fail

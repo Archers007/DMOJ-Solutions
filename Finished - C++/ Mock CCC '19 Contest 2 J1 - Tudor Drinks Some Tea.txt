@@ -2,29 +2,22 @@
 #include <iostream>     //for using cout
 #include <cmath>//for math
 #include <math.h>
-#include <algorithm>
-#include <string>
-#include <cstring>
-#include <stdio.h>
-#include <locale>
 
 
 using namespace std;
 //Includes-------------------------------------------
 
 //var------------------------------------------------
-int k,n,sum,khold;
+int i=5,c;
+char in;
 //var------------------------------------------------
+
 int main(){
-	cin>>k>>n;
-	sum=k;
-	while(n!=0){
-		khold=k;
-		for(int i=0; i<n; i++){
-			khold=khold*10;
+	for(int x=0; x<i; x++){
+		cin>>in;
+		if(in=='P'){
+			c++;
 		}
-		sum=sum+khold;
-		n--;
 	}
-	cout<<sum;
+	cout<<c<<endl;
 }

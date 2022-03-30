@@ -2,29 +2,34 @@
 #include <iostream>     //for using cout
 #include <cmath>//for math
 #include <math.h>
-#include <algorithm>
-#include <string>
-#include <cstring>
-#include <stdio.h>
-#include <locale>
-
-
+ 
 using namespace std;
 //Includes-------------------------------------------
 
 //var------------------------------------------------
-int k,n,sum,khold;
+int n,i,z,yes;
 //var------------------------------------------------
 int main(){
-	cin>>k>>n;
-	sum=k;
-	while(n!=0){
-		khold=k;
-		for(int i=0; i<n; i++){
-			khold=khold*10;
+	cin>>i;
+	while(i!=0){
+		yes=0;
+		cin>>n;
+		z=1;
+		while(z<=n){
+			if(n%z==0){
+				if(z!=n){
+					yes=yes+z;
+				}
+			}
+			z++;
 		}
-		sum=sum+khold;
-		n--;
+		if(yes<n){
+			cout<<n<<" is a deficient number.\n";
+		}else if(yes==n){
+			cout<<n<<" is a perfect number.\n";
+		}else{
+			cout<<n<<" is an abundant number.\n";
+		}
+		i--;
 	}
-	cout<<sum;
 }

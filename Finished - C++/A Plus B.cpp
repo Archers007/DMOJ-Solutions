@@ -6,13 +6,14 @@ using namespace std;
 //Includes-------------------------------------------
  
 //var------------------------------------------------
-int monkee;
 //var------------------------------------------------
-void monke(int args){
-	cout<<args;
-}
-
 int main() {
-	cin>>monkee;
-	monke(monkee);
+    int N;
+    cin >> N;
+
+    for (int i = 0; i < N; i++) {
+        int a, b;
+        cin >> a >> b;
+        cout << a + b << endl;
+    }
 }

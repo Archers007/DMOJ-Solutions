@@ -1,18 +1,16 @@
 //Includes-------------------------------------------
 #include <iostream>     //for using cout
-#include <cmath>        //for math
+#include <cmath>//for math
+#include <math.h>
+
 
 using namespace std;
 //Includes-------------------------------------------
- 
-//var------------------------------------------------
-int monkee;
-//var------------------------------------------------
-void monke(int args){
-	cout<<args;
-}
 
+//var------------------------------------------------
+char num[8];
+//var------------------------------------------------
 int main() {
-	cin>>monkee;
-	monke(monkee);
+    cout << "Hello, World!" << endl;
+    return 0;
 }

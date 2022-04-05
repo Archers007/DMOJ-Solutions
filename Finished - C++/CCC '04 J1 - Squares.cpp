@@ -8,12 +8,18 @@ using namespace std;
 //Includes-------------------------------------------
 
 //var------------------------------------------------
-int a,b,out,ab;
+float a,c;
 //var------------------------------------------------
 
 int main(){
-	cin>>a>>b;
-	for(int i=0; i<a; i++){
-		
+	cin>>a;
+	for(int i=a*5; i>0; i--){
+		c=sqrt(a);
+		if(c==int(c)){
+			cout<<"The largest square has side length "<<c<<".";
+			return 0;
+		}else{
+			a--;
+		}
 	}
 }

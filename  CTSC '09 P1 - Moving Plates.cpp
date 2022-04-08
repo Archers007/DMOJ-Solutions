@@ -15,6 +15,8 @@ int n,k,inp,plates,platesb,platesc,moves;
 vector<int> s1,s2,s3;
 //var------------------------------------------------
 
+//https://dmoj.ca/problem/ctsc09p1
+
 void complete(){
 	cout<<"\n WORKED!🍻\n";
 }

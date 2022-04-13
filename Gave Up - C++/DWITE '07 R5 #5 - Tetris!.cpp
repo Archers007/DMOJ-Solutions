@@ -12,15 +12,36 @@ using namespace std;
 //Includes-------------------------------------------
 
 //var------------------------------------------------
-int board=10,curow=1,pice=4,t;
+int board=10,curow=1,pice=4,t,index,rot=0;
 bool touch=false;
 char inp;
 char d;
-vector<char> r1,r2,r3,r4,r5,r6,p1,p2,p3,p4,hold;
+vector<char> r1,r2,r3,r4,r5,r6;
+vector<char> p1,p2,p3,p4;
+vector<char> hold;
+vector<char> p11,p22,p33,p44;
+vector<char> empty{' ',' ',' ',' '};
+int emptylen = empty.size()-1;
 //var------------------------------------------------
 
 void clear(){
 	cout<<"\x1B[2J\x1B[H";
+}
+void emptyvec(){
+	r1.clear();
+	r2.clear();
+	r3.clear();
+	r5.clear();
+	r6.clear();
+	p1.clear();
+	p2.clear();
+	p3.clear();
+	p4.clear();
+	hold.clear();
+	p11.clear();
+	p22.clear();
+	p33.clear();
+	p44.clear();
 }
 //inputs -->
 void piece(){
@@ -31,12 +52,19 @@ void piece(){
 					cin>>inp;
 					p1.push_back(inp);
 				}
+				for(int i=0; i<10; i++){
+					p11.push_back('.');
+				}
 				break;
 			}
 			case 1:{
 				for(int i=0; i<pice; i++){
 					cin>>inp;
 					p2.push_back(inp);
+				}
+				
+				for(int i=0; i<10; i++){
+					p22.push_back('.');
 				}
 				break;
 			}
@@ -45,12 +73,19 @@ void piece(){
 					cin>>inp;
 					p3.push_back(inp);
 				}
+				
+				for(int i=0; i<10; i++){
+					p33.push_back('.');
+				}
 				break;
 			}
 			case 3:{
 				for(int i=0; i<pice; i++){
 					cin>>inp;
 					p4.push_back(inp);
+				}
+				for(int i=0; i<10; i++){
+					p44.push_back('.');
 				}
 				break;
 			}
@@ -106,6 +141,40 @@ void input(){
 	}
 }
 //display -->
+void displaypieceextend(){
+	for(int i=0; i<pice; i++){
+		switch(i){
+			case 0:{
+				for(auto k:p11){
+					cout<<k<<' ';
+				}
+				cout<<endl;
+				break;
+			}
+			case 1:{
+				for(auto k:p22){
+					cout<<k<<' ';
+				}
+				cout<<endl;
+				break;
+			}
+			case 2:{
+				for(auto k:p33){
+					cout<<k<<' ';
+				}
+				cout<<endl;
+				break;
+			}
+			case 3:{
+				for(auto k:p44){
+					cout<<k<<' ';
+				}
+				cout<<endl;
+				break;
+			}
+		}
+	}
+}
 void displayboard(){
 	for(int i=0; i<=board; i++){
 		switch(i){
@@ -186,10 +255,66 @@ void displaypiece(){
 				break;
 			}
 		}
+		
 	}
 }
+void displayall(){
+	cout<<"Current Piece With Current Rotation ("<<rot*90<<"°) -->\n";
+	displaypiece();
+	cout<<"Current Piece Extended -->\n";
+	displaypieceextend();
+	cout<<"Current Board Layout -->\n";
+	displayboard();
+}
+void displaydrop(){
+	cout<<"\n Full Board -->\n";
+	displaypieceextend();
+	displayboard();
+}
 //functions -->
+void rotright(int i){
+	for(int x=0; x<i; x++){
+		p44.insert(p44.begin(), p44[9]);
+		p44.pop_back();
+		p33.insert(p33.begin(), p33[9]);
+		p33.pop_back();
+		p22.insert(p22.begin(), p22[9]);
+		p22.pop_back();
+		p11.insert(p11.begin(), p11[9]);
+		p11.pop_back();
+	}
+}
+void merge(){
+	for(int i=0; i<pice; i++){
+		switch(i){
+			case 0:{
+				replace(p11.begin(), p11.end(), '#', '.');
+				copy(p1.begin(), p1.end(), p11.begin());
+				break;
+			}
+			case 1:{
+				replace(p22.begin(), p22.end(), '#', '.');
+				copy(p2.begin(), p2.end(), p22.begin());
+				break;
+			}
+			case 2:{
+				replace(p33.begin(), p33.end(), '#', '.');
+				copy(p3.begin(), p3.end(), p33.begin());
+				break;
+			}
+			case 3:{
+				replace(p44.begin(), p44.end(), '#', '.');
+				copy(p4.begin(), p4.end(), p44.begin());
+				break;
+			}
+		}
+	}
+}
 void rotate(){
+	rot++;
+	if(rot>3){
+		rot=0;
+	}
 	for(int i=0; i<pice; i++){
 		hold.push_back(p1[i]);
 		hold.push_back(p2[i]);
@@ -252,16 +377,40 @@ void rotate(){
 			}
 		}
 	}
+	merge();
 }
-
+void buildhole(){
+	auto it = find(r1.begin(), r1.end(), '.');
+	int index = it - r1.begin();
+	if(it!= r1.end()){
+		if(r2[index]=='.'){
+			if(r3[index]=='.'){
+				rotright(index);
+			}
+		}
+	}/*else{
+		auto it = find(r2.begin(), r2.end(), '.');
+		int index = it - r2.begin();
+		if(it!= r2.end()){
+			
+		}*/
+	//}
+}
+void drop(){
+	
+}
 //driver code-->
 int main(){
-	piece();
-	input();
-	displaypiece();
-	for(int i=0; i<3; i++){
-		cout<<endl;
+	emptyvec();
+	for(int i=0; i<1; i++){
+		piece();
+		input();
+		merge();
 		rotate();
-		displaypiece();
+		displayall();
+		buildhole();
+		cout<<endl;
+		drop();
+		displaydrop();
 	}
 }

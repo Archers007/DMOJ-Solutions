@@ -2,26 +2,28 @@
 #include <iostream>     //for using cout
 #include <cmath>//for math
 #include <math.h>
-#include <algorithm>
+#include <string>
 #include <vector>
+#include <algorithm>
+
 
 using namespace std;
 //Includes-------------------------------------------
 
 //var------------------------------------------------
-int t,inp;
+int t, inp;
 vector<int> v;
 //var------------------------------------------------
 
-int main() {
+//driver code-->
+int main(){
 	cin>>t;
 	for(int i=0; i<t; i++){
 		cin>>inp;
 		v.push_back(inp);
 	}
 	sort(v.begin(), v.end());
-	
-	for (auto i: v){
-    cout << i <<endl;
+	for(auto x:v){
+		cout<<x<<endl;
 	}
 }

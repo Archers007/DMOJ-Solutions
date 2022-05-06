@@ -8,31 +8,32 @@ using namespace std;
 //Includes-------------------------------------------
 
 //var------------------------------------------------
-int num,ins,p1,p2,c=2;
+int inp, lates, line;
+string in;
+bool on = true;
 //var------------------------------------------------
+
 int main(){
-	cin>>ins;
-	for(int i=0; i<ins; i++){
-		cin>>num;
-		int p1=1;
-		int divs;
-		num=num*2;
-		while(p1+p2!=num){
-			c=2;
-			p2=num-p1;
-			while(c!=p2){
-				if(p2%c==0){
-					divs=divs+c;
-					c++;
-				}else{
-					c++;
-				}
-				if(divs!=0){
-					p1++;
-				}else{
-					cout<<p1<<' '<<p2<<endl;
-				}
+	cin>>inp;
+	while(on){
+		cin>>in;
+		if(in=="EOF"){
+			on = false;
+		}else if(in=="TAKE"){
+			if(inp>999){
+				inp=1;
+			}else{
+				inp++;
 			}
+			lates++;
+			line++;
+		}else if(in=="SERVE"){
+			line--;
+		}else if(in=="CLOSE"){
+			cout<<lates<<' '<<line<<' '<<inp<<endl;
+			line=0;
+			lates=0;
+			inp=1;
 		}
 	}
 }

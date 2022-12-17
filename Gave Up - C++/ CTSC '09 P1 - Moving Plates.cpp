@@ -15,8 +15,6 @@ int n,k,inp,plates,platesb,platesc,moves;
 vector<int> s1,s2,s3;
 //var------------------------------------------------
 
-//https://dmoj.ca/problem/ctsc09p1
-
 void complete(){
 	cout<<"\n WORKED!🍻\n";
 }
@@ -27,7 +25,7 @@ void BRUH(){
 }
 
 void plateexe(){
-	for(int v; v<(n*5); v++){
+	for(int i=0; i<(n*5); i++){
 		platesb=(s2.size())-1;
 		platesc=(s3.size())-1;
 		if(s3[platesc]==1){
@@ -49,18 +47,18 @@ void plateexe(){
 }
 
 int main(){
-	cin >> n;
+  cin >> n;
 	for(int i=0; i<n; i++){
 		cin>>inp;
 		s1.push_back(inp);
 	}
 	s2.push_back(moves);
 	s3.push_back(moves);
+	reverse(s1.begin(), s1.end());
 	for(int i=0; i<n; i++){
 		plates=(s1.size())-1;
 		platesb=(s2.size())-1;
 		platesc=(s3.size())-1;
-		
 		if(s1[plates]==3){
 			if(s3[platesc]==1){
 				while(s3[platesc]==1){

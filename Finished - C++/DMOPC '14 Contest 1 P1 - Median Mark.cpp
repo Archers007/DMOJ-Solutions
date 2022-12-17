@@ -2,24 +2,31 @@
 #include <iostream>     //for using cout
 #include <cmath>//for math
 #include <math.h>
-
-
+#include <algorithm>
 using namespace std;
 //Includes-------------------------------------------
 
 //var------------------------------------------------
-long long int a,b,c,tim;
+int x,inp;
 //var------------------------------------------------
 
+//driver code -->
 int main(){
-  long long int a,b,c,tim;
-	cin>>tim;
-	for(int i=0; i<tim; i++){
-		cin>>a>>b>>c;
-		if(a*b==c){
-			cout<<"POSSIBLE DOUBLE SIGMA\n";
-		}else{
-			cout<<"16 BIT S/W ONLY\n";
-		}
+	cin>>x;
+	float v[x];
+	for(int i=0; i<x; i++){
+		cin>>inp;
+		v[i]=inp;
+	}
+	inp = sizeof(v)/sizeof(float);
+	sort(v, v+inp);
+	if(inp%2==0){
+		inp=inp/2;
+		float out = round((v[inp-1]+v[inp])/2);
+		cout<< out;
+	}else{
+		inp--;
+		inp=inp/2;
+		cout<<v[inp];
 	}
 }

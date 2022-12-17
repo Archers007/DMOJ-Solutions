@@ -13,6 +13,4 @@ int num1,num2,num3;
 int main(){
 	cin >>num1>>num2>>num3;
 	cout <<"The 1-3-sum is "<< tt+num1+(num2*3)+num3;
-	
-	
 }
